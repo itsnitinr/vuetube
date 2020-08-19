@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input />
+    <input @input="onInput" />
   </div>
 </template>
 
@@ -8,8 +8,8 @@
 export default {
   name: "Searchbar",
   methods: {
-    onInput: function (event) {
-      console.log(event.target.value);
+    onInput(event) {
+      this.$emit("termChange", event.target.value);
     },
   },
 };
