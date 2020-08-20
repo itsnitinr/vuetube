@@ -1,6 +1,10 @@
 <template>
   <div>
-    <Searchbar @termChange="onTermChange"></Searchbar>
+    <div class="nav-header">
+      <img src="@/assets/yt_logo_rgb_dark.png" alt />
+      <Searchbar @termChange="onTermChange" />
+      <span></span>
+    </div>
     <VideoList :videos="videos" />
   </div>
 </template>
@@ -37,3 +41,26 @@ export default {
   },
 };
 </script>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #181818;
+  color: whitesmoke;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #303030;
+}
+
+.nav-header img {
+  height: 30px;
+  fill: white;
+}
+</style>

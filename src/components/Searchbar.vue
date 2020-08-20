@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input @input="onInput" />
+    <input @input="onInput" placeholder="Search for videos" />
   </div>
 </template>
 
@@ -14,3 +14,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+input {
+  padding: 0.5rem 1rem;
+  background: #181818;
+  color: #eee;
+  border: 1px solid #000000;
+  outline: 1px solid #7a7a7a;
+  font-size: 1.2rem;
+}
+</style>
