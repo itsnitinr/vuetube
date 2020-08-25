@@ -6,7 +6,7 @@
       <span></span>
     </div>
     <div class="container">
-      <VideoList :videos="videos" />
+      <VideoList :videos="videos" @videoSelect="onVideoSelect" />
     </div>
   </div>
 </template>
@@ -39,6 +39,9 @@ export default {
           },
         })
         .then((res) => (this.videos = res.data.items));
+    },
+    onVideoSelect(video) {
+      console.log(video);
     },
   },
 };
