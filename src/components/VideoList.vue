@@ -19,4 +19,8 @@ export default {
 </script>
 
 <style>
+ul {
+  color: white;
+  list-style: none;
+}
 </style>

@@ -5,7 +5,9 @@
       <Searchbar @termChange="onTermChange" />
       <span></span>
     </div>
-    <VideoList :videos="videos" />
+    <div class="container">
+      <VideoList :videos="videos" />
+    </div>
   </div>
 </template>
 
@@ -62,5 +64,9 @@ body {
 .nav-header img {
   height: 30px;
   fill: white;
+}
+
+.container {
+  padding: 5rem;
 }
 </style>
