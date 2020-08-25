@@ -74,5 +74,7 @@ body {
 
 .container {
   padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>
