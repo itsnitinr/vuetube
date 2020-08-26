@@ -75,6 +75,23 @@ body {
 .container {
   padding: 5rem;
   display: flex;
-  flex-wrap: wrap;
+}
+
+.container .video-detail {
+  flex: 3;
+}
+
+.container .video-list {
+  flex: 2;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-header img {
+    height: 20px;
+  }
 }
 </style>

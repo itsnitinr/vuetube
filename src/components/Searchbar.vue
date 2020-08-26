@@ -24,4 +24,11 @@ input {
   outline: 1px solid #7a7a7a;
   font-size: 1.2rem;
 }
+
+@media (max-width: 700px) {
+  input {
+    margin-left: 1rem;
+    padding: 0.5rem;
+  }
+}
 </style>

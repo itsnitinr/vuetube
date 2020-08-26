@@ -1,5 +1,5 @@
 <template>
-  <div v-if="video">
+  <div v-if="video" class="video-detail">
     <div class="video-container">
       <iframe class="video-player" :src="videoUrl" />
     </div>
@@ -25,9 +25,10 @@ export default {
 
 <style scoped>
 .video-details {
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 1rem;
   border: 2px solid #303030;
+  max-width: 100%;
 }
 
 .video-container {

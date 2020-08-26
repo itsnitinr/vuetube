@@ -37,6 +37,6 @@ li img {
   margin-right: 1.5rem;
 }
 li h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 </style>

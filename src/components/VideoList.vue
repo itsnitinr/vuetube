@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="video-list">
     <VideoItem
       v-for="video in videos"
       :key="video.etag"
@@ -32,5 +32,11 @@ export default {
 ul {
   color: white;
   list-style: none;
+}
+
+@media (max-width: 700px) {
+  ul {
+    padding-inline-start: 0;
+  }
 }
 </style>
