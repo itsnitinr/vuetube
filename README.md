@@ -1,5 +1,7 @@
 # vuetube
 
+![VueTube](https://imgur.com/CAh9vhI.png)
+
 ## Project setup
 ```
 yarn install
